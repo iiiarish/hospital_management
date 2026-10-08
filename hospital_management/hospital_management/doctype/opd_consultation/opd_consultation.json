@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-30 19:22:37.607283",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_frca",
+  "hospital",
+  "appointment",
+  "patient",
+  "patient_name",
+  "doctor",
+  "department",
+  "consultation_date",
+  "symptoms",
+  "diagnosis",
+  "treatment",
+  "prescription",
+  "follow_up_date",
+  "consultation_status",
+  "amended_from",
+  "prescriptions"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_frca",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Appointment",
+   "options": "Doctor Appointment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Hospital Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctor",
+   "options": "Hospital Doctor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Hospital Department"
+  },
+  {
+   "fieldname": "consultation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Consultation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "symptoms",
+   "fieldtype": "Small Text",
+   "label": "Symptoms"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Small Text",
+   "label": "Diagnosis"
+  },
+  {
+   "fieldname": "treatment",
+   "fieldtype": "Small Text",
+   "label": "Treatment"
+  },
+  {
+   "fieldname": "prescription",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "old Prescription"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow Up Date"
+  },
+  {
+   "fieldname": "consultation_status",
+   "fieldtype": "Select",
+   "label": "Consultation Status",
+   "options": "Open\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "OPD Consultation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "prescriptions",
+   "fieldtype": "Table",
+   "label": "Prescriptions",
+   "options": "OPD Prescription Item"
+  },
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "label": "Hospital",
+   "options": "Hospital",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-29 05:25:52.035987",
+ "modified_by": "Administrator",
+ "module": "Hospital Management",
+ "name": "OPD Consultation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-13 09:53:19.366451",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bed_number",
+  "ward",
+  "bed_type",
+  "bed_status",
+  "floor",
+  "notes",
+  "hospital"
+ ],
+ "fields": [
+  {
+   "fieldname": "bed_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bed Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ward",
+   "options": "Hospital Ward",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bed_type",
+   "fieldtype": "Select",
+   "label": "Bed Type",
+   "options": "General\nSemi Private\nPrivate\nICU\nEmergency"
+  },
+  {
+   "fieldname": "bed_status",
+   "fieldtype": "Select",
+   "label": "Bed Status",
+   "options": "Available\nOccupied\nMaintenance\nInactive"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "label": "Hospital",
+   "options": "Hospital",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-27 07:17:22.979011",
+ "modified_by": "Administrator",
+ "module": "Hospital Management",
+ "name": "Hospital Bed",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
